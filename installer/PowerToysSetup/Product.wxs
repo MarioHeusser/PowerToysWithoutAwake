@@ -56,7 +56,6 @@
       <ComponentGroupRef Id="CoreComponents" />
 
       <ComponentGroupRef Id="AlwaysOnTopComponentGroup" />
-      <ComponentGroupRef Id="AwakeComponentGroup" />
       <ComponentGroupRef Id="ColorPickerComponentGroup" />
       <ComponentGroupRef Id="FancyZonesComponentGroup" />
       <ComponentGroupRef Id="FileExplorerPreviewComponentGroup" />
@@ -477,9 +476,6 @@
             </Directory>
             <Directory Id="FancyZonesInstallFolder" Name="$(var.FancyZonesProjectName)" />
             <Directory Id="PowerOCRInstallFolder" Name="$(var.PowerOCRProjectName)" />
-            <Directory Id="AwakeInstallFolder" Name="$(var.AwakeProjectName)">
-              <Directory Id="AwakeImagesFolder" Name="Images" />
-            </Directory>
 
             <!-- KBM -->
             <Directory Id="KeyboardManagerInstallFolder" Name="$(var.KeyboardManagerProjectName)">

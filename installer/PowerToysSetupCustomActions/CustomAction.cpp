@@ -1063,7 +1063,6 @@ const std::wstring PTInteropConsumers[] =
     L"modules\\FancyZones",
     L"modules\\ImageResizer",
     L"Settings",
-    L"modules\\Awake",
     L"modules\\MeasureTool",
     L"modules\\PowerAccent",
     L"modules\\FileLocksmith",
@@ -1114,7 +1113,7 @@ UINT __stdcall CreateDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
     HRESULT hr = S_OK;
     UINT er = ERROR_SUCCESS;
     std::wstring installationFolder, dotnetRuntimeFilesSrcDir, colorPickerDir, powerOCRDir, launcherDir, fancyZonesDir,
-      imageResizerDir, settingsDir, awakeDir, measureToolDir, powerAccentDir, fileExplorerAddOnsDir, hostsDir, fileLocksmithDir,
+      imageResizerDir, settingsDir, measureToolDir, powerAccentDir, fileExplorerAddOnsDir, hostsDir, fileLocksmithDir,
       mouseJumpDir, registryPreviewDir;
 
     hr = WcaInitialize(hInstall, "CreateDotnetRuntimeHardlinksCA");
@@ -1130,7 +1129,6 @@ UINT __stdcall CreateDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
     fancyZonesDir = installationFolder + L"modules\\FancyZones\\";
     imageResizerDir = installationFolder + L"modules\\ImageResizer\\";
     settingsDir = installationFolder + L"Settings\\";
-    awakeDir = installationFolder + L"modules\\Awake\\";
     measureToolDir = installationFolder + L"modules\\MeasureTool\\";
     powerAccentDir = installationFolder + L"modules\\PowerAccent\\";
     fileExplorerAddOnsDir = installationFolder + L"modules\\FileExplorerPreview\\";
@@ -1148,7 +1146,6 @@ UINT __stdcall CreateDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
         std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (fancyZonesDir + file).c_str(), ec);
         std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (imageResizerDir + file).c_str(), ec);
         std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (settingsDir + file).c_str(), ec);
-        std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (awakeDir + file).c_str(), ec);
         std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (measureToolDir + file).c_str(), ec);
         std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (powerAccentDir + file).c_str(), ec);
         std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (fileExplorerAddOnsDir + file).c_str(), ec);
@@ -1170,7 +1167,6 @@ UINT __stdcall CreateDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
     for (auto file : dotnetRuntimeWPFFiles)
     {
       std::error_code ec;
-      std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (awakeDir + file).c_str(), ec);
       std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (colorPickerDir + file).c_str(), ec);
       std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (powerOCRDir + file).c_str(), ec);
       std::filesystem::create_hard_link((dotnetRuntimeFilesSrcDir + file).c_str(), (launcherDir + file).c_str(), ec);
@@ -1274,7 +1270,7 @@ UINT __stdcall DeleteDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
     HRESULT hr = S_OK;
     UINT er = ERROR_SUCCESS;
     std::wstring installationFolder, colorPickerDir, powerOCRDir, launcherDir, fancyZonesDir,
-      imageResizerDir, settingsDir, awakeDir, measureToolDir, powerAccentDir, fileExplorerAddOnsDir,
+      imageResizerDir, settingsDir, measureToolDir, powerAccentDir, fileExplorerAddOnsDir,
       hostsDir, fileLocksmithDir, mouseJumpDir, registryPreviewDir;
 
     hr = WcaInitialize(hInstall, "DeleteDotnetRuntimeHardlinksCA");
@@ -1289,7 +1285,6 @@ UINT __stdcall DeleteDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
     fancyZonesDir = installationFolder + L"modules\\FancyZones\\";
     imageResizerDir = installationFolder + L"modules\\ImageResizer\\";
     settingsDir = installationFolder + L"Settings\\";
-    awakeDir = installationFolder + L"modules\\Awake\\";
     measureToolDir = installationFolder + L"modules\\MeasureTool\\";
     powerAccentDir = installationFolder + L"modules\\PowerAccent\\";
     fileExplorerAddOnsDir = installationFolder + L"modules\\FileExplorerPreview\\";
@@ -1308,7 +1303,6 @@ UINT __stdcall DeleteDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
           DeleteFile((fancyZonesDir + file).c_str());
           DeleteFile((imageResizerDir + file).c_str());
           DeleteFile((settingsDir + file).c_str());
-          DeleteFile((awakeDir + file).c_str());
           DeleteFile((measureToolDir + file).c_str());
           DeleteFile((powerAccentDir + file).c_str());
           DeleteFile((fileExplorerAddOnsDir + file).c_str());
@@ -1320,7 +1314,6 @@ UINT __stdcall DeleteDotnetRuntimeHardlinksCA(MSIHANDLE hInstall)
 
         for (auto file : dotnetRuntimeWPFFiles)
         {
-          DeleteFile((awakeDir + file).c_str());
           DeleteFile((colorPickerDir + file).c_str());
           DeleteFile((powerOCRDir + file).c_str());
           DeleteFile((launcherDir + file).c_str());
@@ -1367,7 +1360,6 @@ UINT __stdcall TerminateProcessesCA(MSIHANDLE hInstall)
     std::array<std::wstring_view, 11> processesToTerminate = {
         L"PowerToys.PowerLauncher.exe",
         L"PowerToys.Settings.exe",
-        L"PowerToys.Awake.exe",
         L"PowerToys.FancyZones.exe",
         L"PowerToys.FancyZonesEditor.exe",
         L"PowerToys.FileLocksmithUI.exe",

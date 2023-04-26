@@ -2,7 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" InitialTargets="EnsureNuGetPackageBuildImports" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\wix.props" Condition="Exists('..\wix.props')" />
   <Import Project="..\..\src\Version.props" />
-
   <PropertyGroup Condition="'$(Platform)' == 'x64'">
     <DefineConstants>Version=$(Version);MonacoSRCHarvestPath=$(ProjectDir)..\..\x64\$(Configuration)\modules\FileExplorerPreview\monacoSRC</DefineConstants>
     <!-- THIS IS AN INNER LOOP OPTIMIZATION
@@ -15,7 +14,6 @@ SET PTRoot=..\..\..\..\..
 call "..\..\..\publish.cmd" x64
 )</PreBuildEvent>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Platform)' != 'x64'">
     <DefineConstants>Version=$(Version);MonacoSRCHarvestPath=$(ProjectDir)..\..\ARM64\$(Configuration)\modules\FileExplorerPreview\monacoSRC</DefineConstants>
     <PreBuildEvent>IF NOT DEFINED IsPipeline (
@@ -63,17 +61,16 @@ call "..\..\..\publish.cmd" arm64
   <PropertyGroup Label="UserMacros" Condition=" '$(PerUser)' != 'true' ">
     <DefineConstants>$(DefineConstants);PerUser=false</DefineConstants>
   </PropertyGroup>
-
   <PropertyGroup>
     <!-- We do not support debug installer builds -->
-    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration> 
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform>$(Platform)</Platform>
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>022a9d30-7c4f-416d-a9df-5ff2661cc0ad</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName Condition=" '$(PerUser)' != 'true' ">PowerToysSetup-$(Version)-$(Platform)</OutputName>
     <OutputName Condition=" '$(PerUser)' == 'true' ">PowerToysUserSetup-$(Version)-$(Platform)</OutputName>
-    <OutputType>Package</OutputType>
+    <OutputType>Bundle</OutputType>
     <SuppressAclReset>True</SuppressAclReset>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -99,9 +96,7 @@ call "..\..\..\publish.cmd" arm64
     <Compile Include="CustomDialogs\PTLicenseDlg.wxs" />
     <Compile Include="CustomDialogs\WixUI_PTInstallDir.wxs" />
     <Compile Include="Product.wxs" />
-
     <Compile Include="AlwaysOnTop.wxs" />
-    <Compile Include="Awake.wxs" />
     <Compile Include="ColorPicker.wxs" />
     <Compile Include="FancyZones.wxs" />
     <Compile Include="FileExplorerPreview.wxs" />
@@ -121,9 +116,7 @@ call "..\..\..\publish.cmd" arm64
     <Compile Include="TextExtractor.wxs" />
     <Compile Include="Tools.wxs" />
     <Compile Include="VideoConference.wxs" />
-
     <Compile Include="MonacoSRC.wxs" />
-
     <Compile Include="Core.wxs" />
     <Compile Include="Resources.wxs" />
     <Compile Include="WinAppSDK.wxs" />
@@ -190,5 +183,4 @@ call "..\..\..\publish.cmd" arm64
       SuppressRegistry="false"
       SuppressRootDirectory="true"/>
   </Target>	-->
-
 </Project>

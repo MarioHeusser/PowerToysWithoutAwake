@@ -29,7 +29,6 @@ void ReportGPOValues(const std::filesystem::path& tmpDir)
     std::wofstream report(reportPath);
     report << "GPO policies configuration" << std::endl;
     report << "getConfiguredAlwaysOnTopEnabledValue: " << gpo_rule_configured_to_string(powertoys_gpo::getConfiguredAlwaysOnTopEnabledValue()) << std::endl;
-    report << "getConfiguredAwakeEnabledValue: " << gpo_rule_configured_to_string(powertoys_gpo::getConfiguredAwakeEnabledValue()) << std::endl;
     report << "getConfiguredColorPickerEnabledValue: " << gpo_rule_configured_to_string(powertoys_gpo::getConfiguredColorPickerEnabledValue()) << std::endl;
     report << "getConfiguredFancyZonesEnabledValue: " << gpo_rule_configured_to_string(powertoys_gpo::getConfiguredFancyZonesEnabledValue()) << std::endl;
     report << "getConfiguredFileLocksmithEnabledValue: " << gpo_rule_configured_to_string(powertoys_gpo::getConfiguredFileLocksmithEnabledValue()) << std::endl;
