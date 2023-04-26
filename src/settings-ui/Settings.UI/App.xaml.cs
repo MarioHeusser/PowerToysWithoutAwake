@@ -137,7 +137,6 @@ namespace Microsoft.PowerToys.Settings.UI
                     {
                         case "Overview": StartupPage = typeof(Views.GeneralPage); break;
                         case "AlwaysOnTop": StartupPage = typeof(Views.AlwaysOnTopPage); break;
-                        case "Awake": StartupPage = typeof(Views.AwakePage); break;
                         case "ColorPicker": StartupPage = typeof(Views.ColorPickerPage); break;
                         case "FancyZones": StartupPage = typeof(Views.FancyZonesPage); break;
                         case "FileLocksmith": StartupPage = typeof(Views.FileLocksmithPage); break;

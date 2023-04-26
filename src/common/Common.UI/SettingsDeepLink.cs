@@ -12,7 +12,6 @@ namespace Common.UI
         public enum SettingsWindow
         {
             Overview = 0,
-            Awake,
             ColorPicker,
             FancyZones,
             Run,
@@ -33,8 +32,6 @@ namespace Common.UI
             {
                 case SettingsWindow.Overview:
                     return "Overview";
-                case SettingsWindow.Awake:
-                    return "Awake";
                 case SettingsWindow.ColorPicker:
                     return "ColorPicker";
                 case SettingsWindow.FancyZones:
@@ -72,7 +69,7 @@ namespace Common.UI
             {
                 var assemblyPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 var fullPath = Directory.GetParent(assemblyPath).FullName;
-                Process.Start(new ProcessStartInfo(fullPath + "\\..\\PowerToys.exe") { Arguments = "--open-settings=" + SettingsWindowNameToString(window) });
+                Process.Start(new ProcessStartInfo(fullPath + "\\..\\PowerToys.exe") { Arguments = "--open-settings=" + SettingsWindowNameToString(window) });  // TODO?!
             }
             catch
             {

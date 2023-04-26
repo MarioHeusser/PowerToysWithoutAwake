@@ -5,7 +5,6 @@
 enum class ESettingsWindowNames
 {
     Overview = 0,
-    Awake,
     ColorPicker,
     FancyZones,
     Run,

@@ -33,10 +33,6 @@
                     Icon="{ui:BitmapIcon Source=/Assets/FluentIcons/FluentIconsAlwaysOnTop.png}"
                     Tag="AlwaysOnTop" />
                 <NavigationViewItem
-                    x:Uid="Shell_Awake"
-                    Icon="{ui:BitmapIcon Source=/Assets/FluentIcons/FluentIconsAwake.png}"
-                    Tag="Awake" />
-                <NavigationViewItem
                     x:Uid="Shell_ColorPicker"
                     Icon="{ui:BitmapIcon Source=/Assets/FluentIcons/FluentIconsColorPicker.png}"
                     Tag="ColorPicker" />

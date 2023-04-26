@@ -20,7 +20,6 @@ namespace powertoys_gpo {
 
     // The registry value names for PowerToys utilities enabled and disabled policies.
     const std::wstring POLICY_CONFIGURE_ENABLED_ALWAYS_ON_TOP = L"ConfigureEnabledUtilityAlwaysOnTop";
-    const std::wstring POLICY_CONFIGURE_ENABLED_AWAKE = L"ConfigureEnabledUtilityAwake";
     const std::wstring POLICY_CONFIGURE_ENABLED_COLOR_PICKER = L"ConfigureEnabledUtilityColorPicker";
     const std::wstring POLICY_CONFIGURE_ENABLED_FANCYZONES = L"ConfigureEnabledUtilityFancyZones";
     const std::wstring POLICY_CONFIGURE_ENABLED_FILE_LOCKSMITH = L"ConfigureEnabledUtilityFileLocksmith";
@@ -115,11 +114,6 @@ namespace powertoys_gpo {
 
     inline gpo_rule_configured_t getConfiguredAlwaysOnTopEnabledValue() {
         return getConfiguredValue(POLICY_CONFIGURE_ENABLED_ALWAYS_ON_TOP);
-    }
-
-    inline gpo_rule_configured_t getConfiguredAwakeEnabledValue()
-    {
-        return getConfiguredValue(POLICY_CONFIGURE_ENABLED_AWAKE);
     }
 
     inline gpo_rule_configured_t getConfiguredColorPickerEnabledValue()

@@ -536,7 +536,7 @@ void bring_settings_to_front()
         DWORD processId;
         if (GetWindowThreadProcessId(hwnd, &processId) && processId == g_settings_process_id)
         {
-            std::wstring windowTitle = L"PowerToys Settings";
+            std::wstring windowTitle = L"PowerToysWithoutAwake Settings";
 
             WCHAR title[MAX_TITLE_LENGTH];
             int len = GetWindowTextW(hwnd, title, MAX_TITLE_LENGTH);
@@ -639,8 +639,6 @@ std::string ESettingsWindowNames_to_string(ESettingsWindowNames value)
     {
     case ESettingsWindowNames::Overview:
         return "Overview";
-    case ESettingsWindowNames::Awake:
-        return "Awake";
     case ESettingsWindowNames::ColorPicker:
         return "ColorPicker";
     case ESettingsWindowNames::FancyZones:
@@ -679,10 +677,6 @@ ESettingsWindowNames ESettingsWindowNames_from_string(std::string value)
     if (value == "Overview")
     {
         return ESettingsWindowNames::Overview;
-    }
-    else if (value == "Awake")
-    {
-        return ESettingsWindowNames::Awake;
     }
     else if (value == "ColorPicker")
     {

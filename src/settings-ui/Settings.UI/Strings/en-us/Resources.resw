@@ -307,10 +307,6 @@
     <value>General</value>
     <comment>Navigation view item name for General</comment>
   </data>
-  <data name="Shell_Awake.Content" xml:space="preserve">
-    <value>Awake</value>
-    <comment>Product name: Navigation view item name for Awake</comment>
-  </data>
   <data name="Shell_PowerLauncher.Content" xml:space="preserve">
     <value>PowerToys Run</value>
     <comment>Product name: Navigation view item name for PowerToys Run</comment>
@@ -1167,7 +1163,7 @@
     <value>Remap shortcuts to other shortcuts or keys for all or specific applications</value>
   </data>
   <data name="General.ModuleDescription" xml:space="preserve">
-    <value>Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.
+    <value>Microsoft PowerToysWithoutAwake is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.
 Made with 💗 by Microsoft and the PowerToys community.</value>
     <comment>Windows refers to the OS</comment>
   </data>
@@ -1840,72 +1836,10 @@ From there, simply click on one of the supported files in the File Explorer and 
     <value>Give feedback</value>
   </data>
   <data name="OobeWindow_Title" xml:space="preserve">
-    <value>Welcome to PowerToys</value>
+    <value>Welcome to PowerToysWithoutAwake</value>
   </data>
   <data name="SettingsWindow_Title" xml:space="preserve">
-    <value>PowerToys Settings</value>
-  </data>
-  <data name="Awake.ModuleTitle" xml:space="preserve">
-    <value>Awake</value>
-  </data>
-  <data name="Awake.ModuleDescription" xml:space="preserve">
-    <value>A convenient way to keep your PC awake on-demand.</value>
-  </data>
-  <data name="Awake_EnableSettingsCard.Header" xml:space="preserve">
-    <value>Enable Awake</value>
-    <comment>Awake is a product name, do not loc</comment>
-  </data>
-  <data name="Awake_NoKeepAwakeSelector.Content" xml:space="preserve">
-    <value>Keep using the selected power plan</value>
-  </data>
-  <data name="Awake_IndefiniteKeepAwakeSelector.Content" xml:space="preserve">
-    <value>Keep awake indefinitely</value>
-  </data>
-  <data name="Awake_TemporaryKeepAwakeSelector.Content" xml:space="preserve">
-    <value>Keep awake for a time interval</value>
-  </data>
-  <data name="Awake_ExpirableKeepAwakeSelector.Content" xml:space="preserve">
-    <value>Keep awake until expiration</value>
-  </data>
-  <data name="Awake_DisplaySettingsCard.Header" xml:space="preserve">
-    <value>Keep screen on</value>
-  </data>
-  <data name="Awake_DisplaySettingsCard.Description" xml:space="preserve">
-    <value>This setting is only available when keeping the PC awake</value>
-  </data>
-  <data name="Awake_ExpirationSettingsExpander.Description" xml:space="preserve">
-    <value>Keep custom awake state until a specific date and time</value>
-  </data>
-  <data name="Awake_ModeSettingsCard.Header" xml:space="preserve">
-    <value>Mode</value>
-  </data>
-  <data name="Awake_BehaviorSettingsGroup.Header" xml:space="preserve">
-    <value>Behavior</value>
-  </data>
-  <data name="Awake_IntervalHoursInput.Header" xml:space="preserve">
-    <value>Hours</value>
-  </data>
-  <data name="Awake_IntervalMinutesInput.Header" xml:space="preserve">
-    <value>Minutes</value>
-  </data>
-  <data name="Awake_ExpirationSettingsExpander_Date.Header" xml:space="preserve">
-    <value>End date</value>
-  </data>
-  <data name="Awake_ExpirationSettingsExpander_Time.Header" xml:space="preserve">
-    <value>End time</value>
-  </data>
-  <data name="Oobe_Awake.Title" xml:space="preserve">
-    <value>Awake</value>
-    <comment>Module name, do not loc</comment>
-  </data>
-  <data name="Oobe_Awake.Description" xml:space="preserve">
-    <value>Awake is a Windows tool designed to keep your PC awake on-demand without having to manage its power settings. This behavior can be helpful when running time-consuming tasks while ensuring that your PC does not go to sleep or turn off its screens.</value>
-  </data>
-  <data name="Oobe_Awake_HowToUse.Text" xml:space="preserve">
-    <value>Open **PowerToys Settings** and enable Awake</value>
-  </data>
-  <data name="Oobe_Awake_TipsAndTricks.Text" xml:space="preserve">
-    <value>You can always change modes quickly by **right-clicking the Awake icon** in the system tray.</value>
+    <value>PowerToysWithoutAwake Settings</value>
   </data>
   <data name="General_FailedToDownloadTheNewVersion.Title" xml:space="preserve">
     <value>An error occurred trying to install this update:</value>
@@ -1981,9 +1915,6 @@ From there, simply click on one of the supported files in the File Explorer and 
   <data name="SeeWhatsNew.Content" xml:space="preserve">
     <value>See what's new</value>
   </data>
-  <data name="Awake_ModeSettingsCard.Description" xml:space="preserve">
-    <value>Manage the state of your device when Awake is active</value>
-  </data>
   <data name="ExcludedApps.Header" xml:space="preserve">
     <value>Excluded apps</value>
   </data>
@@ -1999,10 +1930,6 @@ From there, simply click on one of the supported files in the File Explorer and 
   <data name="To.Text" xml:space="preserve">
     <value>to</value>
     <comment>as in: from x to y</comment>
-  </data>
-  <data name="LearnMore_Awake.Text" xml:space="preserve">
-    <value>Learn more about Awake</value>
-    <comment>Awake is a product name, do not loc</comment>
   </data>
   <data name="LearnMore_ColorPicker.Text" xml:space="preserve">
     <value>Learn more about Color Picker</value>
@@ -2113,10 +2040,6 @@ From there, simply click on one of the supported files in the File Explorer and 
   <data name="PowerLauncher_SearchList.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
     <value>Search this list</value>
   </data>
-  <data name="Awake.SecondaryLinksHeader" xml:space="preserve">
-    <value>Attribution</value>
-    <comment>giving credit to the projects this utility was based on</comment>
-  </data>
   <data name="ColorPicker.SecondaryLinksHeader" xml:space="preserve">
     <value>Attribution</value>
     <comment>giving credit to the projects this utility was based on</comment>
@@ -2171,12 +2094,6 @@ From there, simply click on one of the supported files in the File Explorer and 
   <data name="ImageResizer_DefaultSize_NewSizePrefix" xml:space="preserve">
     <value>New size</value>
     <comment>First part of the default name of new sizes that can be added in PT's settings ui.</comment>
-  </data>
-  <data name="Awake_IntervalSettingsCard.Header" xml:space="preserve">
-    <value>Interval before returning to the previous awakeness state</value>
-  </data>
-  <data name="Awake_ExpirationSettingsExpander.Header" xml:space="preserve">
-    <value>End date and time</value>
   </data>
   <data name="MouseUtils.ModuleTitle" xml:space="preserve">
     <value>Mouse utilities</value>

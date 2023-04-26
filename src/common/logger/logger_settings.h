@@ -35,7 +35,6 @@ struct LogSettings
     inline const static std::wstring svgThumbLogPath = L"logs\\FileExplorer_localLow\\SvgThumbnailProvider\\svg-thumbnail-provider-log.txt";
     inline const static std::string launcherLoggerName = "launcher";
     inline const static std::wstring launcherLogPath = L"LogsModuleInterface\\launcher-log.txt";
-    inline const static std::wstring awakeLogPath = L"Logs\\awake-log.txt";
     inline const static std::wstring powerAccentLogPath = L"quick-accent-log.txt";
     inline const static std::string fancyZonesLoggerName = "fancyzones";
     inline const static std::wstring fancyZonesLogPath = L"fancyzones-log.txt";

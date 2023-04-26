@@ -8,10 +8,6 @@ namespace winrt::PowerToys::GPOWrapper::implementation
     {
         return static_cast<GpoRuleConfigured>(powertoys_gpo::getConfiguredAlwaysOnTopEnabledValue());
     }
-    GpoRuleConfigured GPOWrapper::GetConfiguredAwakeEnabledValue()
-    {
-        return static_cast<GpoRuleConfigured>(powertoys_gpo::getConfiguredAwakeEnabledValue());
-    }
     GpoRuleConfigured GPOWrapper::GetConfiguredColorPickerEnabledValue()
     {
         return static_cast<GpoRuleConfigured>(powertoys_gpo::getConfiguredColorPickerEnabledValue());

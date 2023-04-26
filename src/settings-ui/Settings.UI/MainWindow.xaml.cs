@@ -93,9 +93,6 @@ namespace Microsoft.PowerToys.Settings.UI
                     case "AlwaysOnTop":
                         needToUpdate = generalSettingsConfig.Enabled.AlwaysOnTop != isEnabled;
                         generalSettingsConfig.Enabled.AlwaysOnTop = isEnabled; break;
-                    case "Awake":
-                        needToUpdate = generalSettingsConfig.Enabled.Awake != isEnabled;
-                        generalSettingsConfig.Enabled.Awake = isEnabled; break;
                     case "ColorPicker":
                         needToUpdate = generalSettingsConfig.Enabled.ColorPicker != isEnabled;
                         generalSettingsConfig.Enabled.ColorPicker = isEnabled; break;

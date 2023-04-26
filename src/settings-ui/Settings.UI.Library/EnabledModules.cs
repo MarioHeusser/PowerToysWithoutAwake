@@ -166,22 +166,6 @@ namespace Microsoft.PowerToys.Settings.UI.Library
             }
         }
 
-        private bool awake;
-
-        [JsonPropertyName("Awake")]
-        public bool Awake
-        {
-            get => awake;
-            set
-            {
-                if (awake != value)
-                {
-                    LogTelemetryEvent(value);
-                    awake = value;
-                }
-            }
-        }
-
         private bool findMyMouse = true;
 
         [JsonPropertyName("FindMyMouse")]
