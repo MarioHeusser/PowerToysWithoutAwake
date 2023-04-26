@@ -1,4 +1,4 @@
-# Microsoft PowerToys
+# Microsoft PowerToysWithoutAwake
 
 ![Hero image for Microsoft PowerToys](doc/images/overview/PT_hero_image.png)
 
