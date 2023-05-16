@@ -9,7 +9,6 @@
   <?define ColorPickerProjectName="ColorPicker"?>
   <?define PowerOCRProjectName="PowerOCR"?>
   <?define VideoConferenceProjectName="VideoConference"?>
-  <?define AwakeProjectName="Awake"?>
   <?define MouseUtilsProjectName="MouseUtils"?>
   <?define AlwaysOnTopProjectName="AlwaysOnTop"?>
   <?define MeasureToolProjectName="MeasureTool"?>

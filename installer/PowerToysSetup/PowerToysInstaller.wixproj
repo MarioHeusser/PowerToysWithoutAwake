@@ -26,7 +26,6 @@ call "..\..\..\publish.cmd" arm64
     <RunPostBuildEvent>Always</RunPostBuildEvent>
     <PostBuildEvent>
     call move /Y ..\..\..\AlwaysOnTop.wxs.bk ..\..\..\AlwaysOnTop.wxs
-    call move /Y ..\..\..\Awake.wxs.bk ..\..\..\Awake.wxs
     call move /Y ..\..\..\ColorPicker.wxs.bk ..\..\..\ColorPicker.wxs
     call move /Y ..\..\..\Core.wxs.bk ..\..\..\Core.wxs
     call move /Y ..\..\..\FancyZones.wxs.bk ..\..\..\FancyZones.wxs

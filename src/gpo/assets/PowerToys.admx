@@ -30,16 +30,6 @@
         <decimal value="0" />
       </disabledValue>
     </policy>
-    <policy name="ConfigureEnabledUtilityAwake" class="Both" displayName="$(string.ConfigureEnabledUtilityAwake)" explainText="$(string.ConfigureEnabledUtilityDescription)" key="Software\Policies\PowerToys" valueName="ConfigureEnabledUtilityAwake">
-      <parentCategory ref="PowerToys" />
-      <supportedOn ref="SUPPORTED_POWERTOYS_0_64_0" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
-    </policy>
     <policy name="ConfigureEnabledUtilityColorPicker" class="Both" displayName="$(string.ConfigureEnabledUtilityColorPicker)" explainText="$(string.ConfigureEnabledUtilityDescription)" key="Software\Policies\PowerToys" valueName="ConfigureEnabledUtilityColorPicker">
       <parentCategory ref="PowerToys" />
       <supportedOn ref="SUPPORTED_POWERTOYS_0_64_0" />

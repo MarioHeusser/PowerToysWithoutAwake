@@ -38,10 +38,6 @@
 
                 "modules\\PastePlain\\PowerToys.PastePlainModuleInterface.dll",
 
-                "modules\\Awake\\PowerToys.AwakeModuleInterface.dll",
-                "modules\\Awake\\PowerToys.Awake.exe",
-                "modules\\Awake\\PowerToys.Awake.dll",
-
                 "modules\\FancyZones\\fancyzones.dll",
                 "modules\\FancyZones\\PowerToys.FancyZonesEditor.exe",
                 "modules\\FancyZones\\PowerToys.FancyZonesEditor.dll",

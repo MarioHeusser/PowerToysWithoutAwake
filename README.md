@@ -17,7 +17,7 @@ Microsoft PowerToys is a set of utilities for power users to tune and streamline
 
 |              | Current utilities: |              |
 |--------------|--------------------|--------------|
-| [Always on Top](https://aka.ms/PowerToysOverview_AoT) | [PowerToys Awake](https://aka.ms/PowerToysOverview_Awake) | [Color Picker](https://aka.ms/PowerToysOverview_ColorPicker) |
+| [Always on Top](https://aka.ms/PowerToysOverview_AoT) | [Color Picker](https://aka.ms/PowerToysOverview_ColorPicker) |
 | [FancyZones](https://aka.ms/PowerToysOverview_FancyZones) | [File Explorer Add-ons](https://aka.ms/PowerToysOverview_FileExplorerAddOns) | [File Locksmith](https://aka.ms/PowerToysOverview_FileLocksmith) |
 | [Hosts File Editor](https://aka.ms/PowerToysOverview_HostsFileEditor) | [Image Resizer](https://aka.ms/PowerToysOverview_ImageResizer) | [Keyboard Manager](https://aka.ms/PowerToysOverview_KeyboardManager) |
 | [Mouse utilities](https://aka.ms/PowerToysOverview_MouseUtilities) | [Paste as Plain Text](https://aka.ms/PowerToysOverview_PastePlain) | [PowerRename](https://aka.ms/PowerToysOverview_PowerRename) |
@@ -90,7 +90,6 @@ In this release, we focused on releasing new features, stability and improvement
 
 - New utility: Registry Preview is a utility to visualize and edit Windows Registry files. Thanks [@randyrants](https://github.com/randyrants)!
 - Support per-user scope installation.
-- Awake: Quality-of-life improvements and introduced keeping system awake until expiration time and date. Thanks [@dend](https://github.com/dend)!
 - PowerToys Run: Fix crashing issue caused by thumbnail image loading.
 
 ### General
@@ -99,10 +98,6 @@ In this release, we focused on releasing new features, stability and improvement
 - Fix issue causing folders to not be removed on uninstall.
 - Support per-user scope installation.
    - Companies can control this using the new GPO.
-
-### Awake
-
-- Quality-of-life improvements and introduced keeping system awake until expiration time and date. Thanks [@dend](https://github.com/dend)!
 
 ### Color Picker
 

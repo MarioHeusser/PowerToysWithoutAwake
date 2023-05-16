@@ -48,7 +48,6 @@ body:
     options:
       - General
       - Always on Top
-      - Awake
       - ColorPicker
       - FancyZones
       - FancyZones Editor 

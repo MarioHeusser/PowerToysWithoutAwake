@@ -50,7 +50,6 @@
       <Command>
       call cmd /C "copy ""$(ProjectDir)DepsFilesLists.h"" ""$(ProjectDir)DepsFilesLists.h.bk"""
       call cmd /C "copy ""$(ProjectDir)..\PowerToysSetup\AlwaysOnTop.wxs"" ""$(ProjectDir)..\PowerToysSetup\AlwaysOnTop.wxs.bk""""
-      call cmd /C "copy ""$(ProjectDir)..\PowerToysSetup\Awake.wxs"" ""$(ProjectDir)..\PowerToysSetup\Awake.wxs.bk""""
       call cmd /C "copy ""$(ProjectDir)..\PowerToysSetup\ColorPicker.wxs"" ""$(ProjectDir)..\PowerToysSetup\ColorPicker.wxs.bk""""
       call cmd /C "copy ""$(ProjectDir)..\PowerToysSetup\Core.wxs"" ""$(ProjectDir)..\PowerToysSetup\Core.wxs.bk""""
       call cmd /C "copy ""$(ProjectDir)..\PowerToysSetup\FancyZones.wxs"" ""$(ProjectDir)..\PowerToysSetup\FancyZones.wxs.bk""""

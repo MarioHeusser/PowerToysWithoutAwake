@@ -88,9 +88,6 @@ Image Resizer is from Brice.
 
 PowerRename is from Chris's SmartRename and icon rendering for SVGs in File Explorer.
 
-### [@dend](https://github.com/dend/) - Den Delimarsky
-
-PowerToys Awake is a tool to keep your computer awake.
 
 ### [@Niels9001](https://github.com/niels9001/) - [Niels Laute](https://nielslaute.com/)
 

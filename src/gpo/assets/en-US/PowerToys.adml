@@ -64,7 +64,6 @@ If this setting is not configured or enabled, the user can control experimentati
 If this setting is disabled, experimentation is not allowed.
 </string>
       <string id="ConfigureEnabledUtilityAlwaysOnTop">Always On Top: Configure enabled state</string>
-      <string id="ConfigureEnabledUtilityAwake">Awake: Configure enabled state</string>
       <string id="ConfigureEnabledUtilityColorPicker">Color Picker: Configure enabled state</string>
       <string id="ConfigureEnabledUtilityFancyZones">FancyZones: Configure enabled state</string>
       <string id="ConfigureEnabledUtilityFileLocksmith">File Locksmith: Configure enabled state</string>

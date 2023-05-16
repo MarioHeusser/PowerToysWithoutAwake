@@ -5,10 +5,6 @@
 #define IDS_AWAKE_NAME               101
 
 
-#define FILE_DESCRIPTION "PowerToys Awake Module"
-#define INTERNAL_NAME "PowerToys.AwakeModuleInterface"
-#define ORIGINAL_FILENAME "PowerToys.AwakeModuleInterface.dll"
-
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
